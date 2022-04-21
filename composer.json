@@ -1,0 +1,10 @@
+{
+    "name": "mmo7amed2010/apiauth",
+    "description": "desc",
+    "autoload": {
+        "psr-4": {
+            "Mmo7amed2010\\Apiauth\\": "src/"
+        }
+    },
+    "require": {}
+}
