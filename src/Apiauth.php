@@ -4,6 +4,8 @@ namespace Mmo7amed2010\Apiauth;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use Hash;
+use Http;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\Rule;
