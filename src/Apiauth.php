@@ -2,8 +2,8 @@
 
 namespace Mmo7amed2010\Apiauth;
 
-use ApiAuthTrait;
+use ApiauthTrait;
 class Apiauth
 {
-    use ApiAuthTrait;
+    use ApiauthTrait;
 }
