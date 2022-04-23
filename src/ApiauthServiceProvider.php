@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\Permission;
+namespace Mmo7amed2010\Apiauth;
 
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Routing\Route;
