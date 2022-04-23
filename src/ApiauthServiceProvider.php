@@ -8,7 +8,7 @@ use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
 use Illuminate\Support\ServiceProvider;
 
-class PermissionServiceProvider extends ServiceProvider
+class ApiauthServiceProvider extends ServiceProvider
 {
     public function boot()
     {
