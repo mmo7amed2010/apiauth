@@ -12,10 +12,16 @@ class ApiauthServiceProvider extends ServiceProvider
 {
     public function boot()
     {
+
+        $this->publishes([
+            __DIR__.'/../config/apiauth.php' => config_path('apiauth.php'),
+        ]);
     }
 
     public function register()
     {
+        $this->loadRoutesFrom(__DIR__.'/../routes/api.php');
+
     }
 
     protected function offerPublishing()
@@ -25,11 +31,7 @@ class ApiauthServiceProvider extends ServiceProvider
 //            return;
 //        }
 
-        $this->loadRoutesFrom(__DIR__.'/../routes/api.php');
 
-        $this->publishes([
-            __DIR__.'/../config/apiauth.php' => config_path('apiauth.php'),
-        ]);
 //        $this->publishes([
 //            __DIR__.'/../controllers/Ap.php' => config_path('permission.php'),
 //        ], 'config');
