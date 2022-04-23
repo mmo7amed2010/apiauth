@@ -4,7 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use Mmo7amed2010\Apiauth\Apiauth;
 
-Route::group(['prefix' => config('apiauth.api.routes_prefix') ?? "api", 'middlewares' =>config('apiauth.api.routes_middlewares') ?? ["api"]], function() {
+Route::group(['prefix' => config('apiauth.routes.routes_prefix') ?? "api", 'middlewares' =>config('apiauth.routes.routes_middlewares') ?? ["api"]], function() {
     Route::post('/login/token', Apiauth::loginByToken());
     Route::middleware('auth:api')->post('/logout', Apiauth::logout());
     Route::post('/refresh', Apiauth::refresh());
