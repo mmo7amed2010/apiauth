@@ -1,4 +1,16 @@
 # api-auth
+at composer.json require mmo7amed2010/apiauth
+```
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/mmo7amed2010/apiauth"
+        }
+    ],
+    "require": {
+        "mmo7amed2010/apiauth": "^2.0.0"
+    },
+```
 ## for passport installation 
 ```
 php artisan migrate
@@ -53,10 +65,9 @@ use Laravel\Passport\Passport;
         return env('SPA_URL') . '/reset-password?token=' . $token;
     });
 ```
-at routes/api.php add this code
+
+to publish config
+
 ```
-use Mmo7amed2010\Apiauth\Apiauth;
-```
-```
-Apiauth::Routes();
+php artisan vendor:publish --provider="Mmo7amed2010\Apiauth\ApiauthServiceProvider"  
 ```
