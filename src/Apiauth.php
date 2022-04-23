@@ -16,11 +16,6 @@ class Apiauth
 
     public static function routes()
     {
-        Route::post('/login/token', self::loginByToken());
-        Route::middleware('auth:api')->post('/logout', self::logout());
-        Route::post('/refresh', self::refresh());
-        Route::post('/register', self::register());
-        Route::middleware('auth:api')->get('/user', self::user());
 
     }
     public static function user(){

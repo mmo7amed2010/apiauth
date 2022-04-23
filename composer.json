@@ -9,5 +9,12 @@
     "require": {
         "php": "^7.3|^8.0|^8.1",
         "laravel/passport": "^10.4"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mmo7amed2010\\Apiauth\\ApiauthServiceProvider"
+            ]
+        },
     }
 }
