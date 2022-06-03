@@ -18,6 +18,16 @@ php artisan migrate
 ```
 php artisan passport:install
 ```
+
+at config\auth.php 
+```
+
+    'api' => [
+        'driver' => 'passport',
+        'provider' => 'user',
+    ],
+```
+
 at .env add this lines and replace the values with your own generated from passport install
 
 ```
